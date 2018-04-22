@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Index HTML</title>
+    <link rel="stylesheet" type="text/css" href="img-fly.css" />
+    <script src="https://use.typekit.net/yon8ycp.js"></script>
+    <script>window.Typekit.load();</script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main class="demo-page">
+      <a target="_blank" href="https://github.com/paralect/img-fly">
+        <div class="demo-page__link">
+          <div class="link__text">
+            GitHub
+          </div>
+          <figure class="link__icon">
+            <svg aria-hidden="true" fill="#585F6F" class="octicon octicon-mark-github" version="1.1" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+              </path>
+            </svg>
+          </figure>
+        </div>
+      </a>
+      <section class="demo-page__caption">
+        <div class="caption__text">
+          <span class="caption__title">Img Fly</span>
+          <span class="caption__subtitle">Upload and transform your images on the fly</span>
+        </div>
+      </section>
+      <section class="demo-page__content">
+        <article class="demo-page__card">
+          <header class="card__header">
+            <p class="card__title">Image preview</p>
+            <p class="card__subtitle">
+              Resize your image and reduce its quality for preview. The loss of visual quality is barely noticeable to the human eye, but the size of the image is considerably less.
+              This transformation can be used for creating galleries or lists of images. Once you click on the image, picture with a real size and quality is shown.
+            </p>
+          </header>
+          <div class="card__images-container">
+            <a onclick="onImagePreviewClick('http://localhost:4001/5ad9b61564899b001f43cfc1/resize-width_900+max/stock-photo-240037471.jpg', '72.3')">
+              <div class="card__preview-image">
+                <img class="card__image" src="http://localhost:4001/5ad9b61564899b001f43cfc1/resize-width_330,height_330+crop-gravity_center+toFormat-jpeg,quality_50/stock-photo-240037471.jpg"></img>
+                <div class="preview-image__text">
+                  Size: 12.3 KB
+                </div>
+              </div>
+            </a>
+            <a onclick="onImagePreviewClick('http://localhost:4001/5ad9f20464899b001f43cfdc/resize-width_800/stock-photo-231256573.jpg', '143')">
+              <div class="card__preview-image">
+                <img class="card__image" src="http://localhost:4001/5ad9f20464899b001f43cfdc/resize-width_330,height_330+crop-gravity_center+toFormat-jpeg,quality_50/stock-photo-231256573.jpg"></img>
+                <div class="preview-image__text">
+                  Size: 16.5 KB
+                </div>
+              </div>
+            </a>
+            <a onclick="onImagePreviewClick('http://localhost:4001/5ad9f3fb64899b001f43cfe1/resize-width_980/stock-photo-240478783.jpg', '138')">
+              <div class="card__preview-image">
+                <img class="card__image" src="http://localhost:4001/5ad9f3fb64899b001f43cfe1/resize-height_330,width_330+crop-gravity_center+toFormat-jpeg,quality_50/stock-photo-240478783.jpg"></img>
+                <div class="preview-image__text">
+                  Size: 21.2 KB
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card__footer">
+              http://localhost:4001/5ad9b61564899b001f43cfc1/resize-width_330,height_330+crop-gravity_center+toFormat-jpeg,quality_50/stock-photo-240037471.jpg
+          </div>
+        </article>
+
+        <article class="demo-page__card">
+          <header class="card__header">
+            <p class="card__title">Avatar uploading with face detection</p>
+            <p class="card__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut metus molestie, sagittis libero vitae, tempor odio.
+            </p>
+          </header>
+          <div class="card__images-container card__images-container--arrow">
+            <div class="card__image-container">
+              <img class="card__image" src="http://localhost:4001/5ad8914064899b001f43cfb5/stock-photo-242845961.jpg"></img>
+            </div>
+            <div class="card__image-container">
+              <img class="card__image" src="http://localhost:4001/5ad8914064899b001f43cfb5/grayscale/stock-photo-242845961.jpg"></img>
+            </div>
+          </div>
+          <div class="card__footer">
+              http://localhost:3001/5ac0bb5fab7ce4028e879d03/extract-left_0,top_30,width_400,height_300+resize-width_300/nice_file_name.png
+          </div>
+        </article>
+
+        <article class="demo-page__card">
+          <header class="card__header">
+            <p class="card__title">Resizing and cropping image</p>
+            <p class="card__subtitle">
+              With resize and crop options you can transform images in order to fit into the design of your web or mobile application.
+            </p>
+          </header>
+          <div class="card__images-container card__images-container--arrow">
+            <div class="card__image-container">
+              <img class="card__image" src="http://localhost:4001/5ad8914064899b001f43cfb5/stock-photo-242845961.jpg"></img>
+            </div>
+            <div class="card__image-container">
+              <img class="card__image" src="http://localhost:4001/5ad8914064899b001f43cfb5/grayscale/stock-photo-242845961.jpg"></img>
+            </div>
+          </div>
+          <div class="card__footer">
+              http://localhost:3001/5ac0bb5fab7ce4028e879d03/extract-left_0,top_30,width_400,height_300+resize-width_300/nice_file_name.png
+          </div>
+        </article>
+
+        <div class="card__modal" id="card__modal">
+          <button class="modal__close" onclick="onImagePreviewClose()">Close</button>
+          <article class="modal__content">
+            <div class="modal__image-container">
+              <img class="modal__image" id="modal__image"></img>
+            </div>
+            <div class="modal__footer" id="modal__footer"></div>
+          </article>
+        </div>
+
+      </section>
+    </main>
+    <script src="img-fly.js"></script>
+  </body>
+</html>
